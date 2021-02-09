@@ -23,10 +23,10 @@ ORDINE:
     CMP BL,'$'
     JE RESET1
     CMP BL,AL
-    JA MINORE
+    JA MAGGIORE
     INC DI
     JMP ORDINE
-MINORE:
+MAGGIORE:
     MOV BL,[DI]
     MOV AL,[SI]
     MOV [DI],AL
